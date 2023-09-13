@@ -3,11 +3,12 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 app = Dash(__name__)
+server = app.server
 
 
 app.layout = html.Div(
     [
-        html.H4("Interactive figure controls with Dash"),
+        html.H4("Super Store Data Analysis Assignment with Dash"),
         html.P("Font Size:"),
         dcc.Slider(
             id="font-size", min=10, max=35, value=25
