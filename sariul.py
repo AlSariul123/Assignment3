@@ -10,6 +10,7 @@ df = pd.read_csv(filepath)
 state_list = df["state"].unique()
 
 app = Dash(__name__)
+server = app.server
 
 app.layout = html.Div(
     [
